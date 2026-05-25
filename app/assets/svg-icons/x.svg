@@ -1,0 +1,5 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"  fill="none">
+	<rect id="fi:x" width="24.000000" height="24.000000" x="0.000000" y="0.000000" />
+	<path id="Vector" d="M18 6L6 18" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" />
+	<path id="Vector" d="M6 6L18 18" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" />
+</svg>

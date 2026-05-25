@@ -1,0 +1,35 @@
+[
+  {
+    "slug": "theatre",
+    "img": "/images/blog/theatre.jpg",
+    "img_tablet": "/images/blog/theatre_tablet.jpg",
+    "img_webp": "/images/blog/theatre.webp",
+    "img_tablet_webp": "/images/blog/theatre_tablet.webp",
+    "alt": "theatre",
+    "title": "Фотосессия в стенах Театра драмы",
+    "descr": "Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было.",
+    "date": "2024-11-26T00:00:00.000+07:00"
+  },
+  {
+    "slug": "vr-exhibition",
+    "img": "/images/blog/exhibition.jpg",
+    "img_tablet": "/images/blog/exhibition_tablet.jpg",
+    "img_webp": "/images/blog/exhibition.webp",
+    "img_tablet_webp": "/images/blog/exhibition_tablet.webp",
+    "alt": "exhibition",
+    "title": "Выставка VR в Томске",
+    "descr": "Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.",
+    "date": "2024-11-05T00:00:00.000+07:00"
+  },
+  {
+    "slug": "rocking-radio",
+    "img": "/images/blog/Rocking.jpg",
+    "img_tablet": "/images/blog/Rocking_tablet.jpg",
+    "img_webp": "/images/blog/Rocking.webp",
+    "img_tablet_webp": "/images/blog/Rocking_tablet.webp",
+    "alt": "Rocking",
+    "title": "Rocking radio в заброшенном ангаре",
+    "descr": "15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.",
+    "date": "2024-11-05T00:00:00.000+07:00"
+  }
+]

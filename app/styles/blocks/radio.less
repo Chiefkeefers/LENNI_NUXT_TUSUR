@@ -1,0 +1,23 @@
+.radio {
+    display: flex;
+    gap: 15px;
+
+  &__mark {
+    width: 13px;
+    height: 13px;
+    border: 2px solid @black;
+    border-radius: 50%;
+    padding: 3px;
+    background-clip: content-box;
+    background-color: transparent;
+    transition: background-color 0.2s;
+  }
+  &__input {
+    .is-hidden();
+    &:checked {
+      &~.radio__mark {
+        background-color: @black;
+      }
+    }
+  }
+}
