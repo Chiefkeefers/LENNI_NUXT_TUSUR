@@ -33,7 +33,7 @@ const tarifs = ref({
         },
         {
          header: "Видеосъемка",
-         values: ["", true, true]
+         values: ["", "", true]
         },
         {
          header: "Организация питания",
@@ -41,7 +41,7 @@ const tarifs = ref({
         },
         {
          header: "Декор",
-         values: ["", true, true]
+         values: ["", "", true]
         },
         {
          header: "Звуковое сопровождение",
@@ -49,7 +49,7 @@ const tarifs = ref({
         },
         {
          header: "Дополнительное освещение",
-         values: ["", true, true]
+         values: ["", "", true]
         },
         {
          header: "Клининг",
