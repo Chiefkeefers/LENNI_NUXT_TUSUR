@@ -89,7 +89,7 @@
         padding: 0;
 
         @media @bw1020 {
-            flex-direction: row;
+            flex-direction: column;
             width: 100%;
             gap: 40px;
         }

@@ -8,7 +8,7 @@
       :speed="speed" 
       :grab-cursor="true" 
       :modules="[Navigation, Pagination]"
-      :pagination="{ clickable: true, dynamicBullets: true }"
+      :pagination="{ el: '.swiper-pagination', clickable: true, dynamicBullets: true }"
       :navigation="{
         prevEl: '.swiper-arrow-prev',
         nextEl: '.swiper-arrow-next',
@@ -146,6 +146,7 @@ const props = defineProps({
     justify-content: center;
     align-items: center;
     width: auto;
+    left: 10% !important;
   }
 
   .swiper-pagination-bullet {

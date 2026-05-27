@@ -63,6 +63,13 @@ const closePopup = () => {
 
     @media @bw768 {
       flex-direction: column-reverse;
+      align-items: center;
+      gap: 25px;
+    }
+
+    @media @bw370 {
+      flex-direction: column-reverse;
+      align-items: center;
       gap: 25px;
     }
   }
@@ -97,6 +104,7 @@ const closePopup = () => {
 
     @media @bw370 {
       font-size: 14px;
+      width: 280px;
     }
   }
 

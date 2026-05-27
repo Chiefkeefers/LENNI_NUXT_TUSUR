@@ -1,5 +1,5 @@
 <template>
-   <section class="app-about" id="about">
+   <section class="app-about">
       <h1 class="app-listing__title section-title">О нас</h1>
 
       <div class="app-about__grid">
@@ -28,23 +28,22 @@
             </p>
          </div>
          <div class="app-about__block3">
-            <div class="app-about__rectangle">
             <picture class="app-about__picture3">
+               <div class="app-about__rectangle"></div>
                <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/about/pic3_mobile.webp" />
                <source media="(max-width: 450px)" srcset="assets/images/about/pic3_mobile.jpg" />
                <source type="image/webp" srcset="assets/images/about/pic3.webp" />
                <img src="assets/images/about/pic3.jpg" class="app-about__img3" alt="pic3">
             </picture>
-            </div>
             <p class="app-about__text3">
                Мы уже успешно организовали и провели более 100 проектов. Посмотрите, как это было классно.
             </p>
-            <div class="app-about__button">
+            <button class="app-about__button">
                <a href="#" class="app-about__link">Смотреть</a>
                <a href="" class="app-about__arrow">
                   <SvgIcon class="app-about__logo" name="arrow_down" width="91" height="60" />
                </a>
-            </div>
+            </button>
          </div>
 
       </div>
@@ -54,7 +53,7 @@
 
 <style lang="less">
 .app-about {
-   margin-bottom: 90px;
+   margin-bottom: 100px;
 
    @media @bw768 {
       margin-bottom: 60px;
@@ -69,23 +68,23 @@
    &__block1 {
       display: grid;
       grid-template-columns: 1fr auto;
-      gap: 90px 65px;
+      gap: 52px 65px;
       grid-template-areas:
          "title title"
          "text text";
-      margin-bottom: 63px;
+      margin-bottom: 100px;
 
       @media @bw1340 {
          margin-bottom: 80px;
       }
 
       @media @bw1020 {
-         gap: 50px;
+         gap: 25px;
       }
 
       @media @bw370 {
-         gap: 30px;
-         margin-bottom: 60px;
+         gap: 20px;
+         margin-bottom: 40px;
       }
    }
 
@@ -116,14 +115,24 @@
          gap: 52px 27px;
       }
 
-      @media @bw370 {
-         grid-template-columns: 120px 130px;
-         gap: 30px;
+      @media @bw768 {
+         grid-template-columns: 1fr; // Добавить промежуточный брейкпоинт
          grid-template-areas:
-            "pic pic"
-            "title title"
-            "text2 text2"
-            "pic2 pic2";
+            "pic"
+            "title"
+            "text2"
+            "pic2";
+         gap: 30px;
+      }
+
+      @media @bw370 {
+         grid-template-columns: 1fr; // Меняем: было 120px 130px
+         gap: 25px; // Меняем: было 30px
+         grid-template-areas:
+            "pic"
+            "title"
+            "text2"
+            "pic2";
       }
    }
 
@@ -136,23 +145,44 @@
          "pic3 button";
 
       @media @bw1170 {
+         grid-template-columns: 1fr; // Добавить: одна колонка
          grid-template-areas:
-            "pic3 pic3"
-            "text3 button";
+            "pic3"
+            "text3"
+            "button";
+         gap: 40px;
+      }
+
+      @media @bw768 {
+         gap: 30px;
       }
 
       @media @bw370 {
-         grid-template-columns: 120px 120px;
+         grid-template-columns: 1fr; // Изменить: было 120px 120px
          grid-template-areas:
-            "pic3 pic3"
-            "text3 text3"
-            "button button";
-         gap: 50px 50px;
+            "pic3"
+            "text3"
+            "button";
+         gap: 25px; // Изменить: было 50px 50px
       }
    }
 
    &__picture {
       grid-area: pic;
+
+      @media @bw1020 {
+         align-self: start;
+      }
+
+      @media @bw768 {
+         max-width: 100%;
+         max-height: 100%;
+      }
+
+      @media @bw370 {
+         max-width: 280px;
+         max-height: 186px;
+      }
    }
 
    &__picture2 {
@@ -160,12 +190,11 @@
       align-self: flex-end;
 
       @media @bw1020 {
-         align-self: start;
+         align-self: flex-end;
       }
 
       @media @bw768 {
          max-width: 193px;
-         margin: 0 0 0 auto;
       }
    }
 
@@ -182,10 +211,10 @@
    &__img3 {
       width: 100%;
       max-width: 870px;
-      height: 143%;
+      height: 95%;
       object-fit: cover;
       margin-left: 49px;
-      margin-top: 25px;
+      margin-top: -229px;
 
       @media @bw1660 {
          margin-top: -225px;
@@ -274,12 +303,12 @@
       @media @bw1340 {
          font-size: 16px;
          max-width: 637px;
-         margin-left: 301px;
+         margin-left: 0px;
       }
 
       @media @bw1020 {
          max-width: 637px;
-         margin-left: 101px;
+         margin-left: 0px;
       }
 
       @media @bw500 {
@@ -299,7 +328,7 @@
       font-size: 18px;
       font-weight: 400;
       font-family: "Open Sans", bold;
-      margin: 4px 77px 76px auto;
+      margin: 5px 77px 75px auto;
       max-width: 870px;
       width: 100%;
 
@@ -321,6 +350,7 @@
       width: 100%;
       max-width: 344px;
       align-self: flex-end;
+      margin-bottom: -115px;
 
       @media @bw1020 {
          margin: 0 0 0 auto;
@@ -336,7 +366,7 @@
       grid-area: button;
       display: flex;
       align-items: center;
-      gap: 150px;
+      gap: 170px;
       border: 0;
       background-color: transparent;
       align-self: flex-end;
@@ -361,7 +391,7 @@
       text-decoration: none;
       font-size: 16px;
       font-weight: 600;
-      font-family: @font4;
+      font-family: @font6;
 
       @media @bw768 {
          font-size: 14px;
