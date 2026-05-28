@@ -195,6 +195,7 @@
 
       @media @bw768 {
          max-width: 193px;
+         justify-self: end;
       }
    }
 
@@ -237,14 +238,14 @@
       }
 
       @media @bw500 {
-         max-width: 267px;
+         max-width: 320px;
          height: 111px;
          margin-left: 11px;
          margin-top: -67px;
       }
 
       @media @bw370 {
-         max-width: 267px;
+         max-width: 320px;
          height: 111px;
          margin-left: 11px;
          margin-top: -67px;
@@ -266,7 +267,7 @@
       }
 
       @media @bw768 {
-         max-width: 280px;
+         max-width: 335px;
          height: 74px;
       }
    }

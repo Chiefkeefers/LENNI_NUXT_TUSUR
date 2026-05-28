@@ -89,15 +89,31 @@
         padding: 0;
 
         @media @bw1020 {
+            display: flex;
             flex-direction: column;
-            width: 100%;
             gap: 40px;
+            padding: 0;
         }
 
-        @media @bw370 {
+        @media @bw768 {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            padding: 0;
+        }
+
+        @media @bw500 {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 0;
+        }
+
+        @media @bw320 {
+            display: flex;
             flex-direction: column;
             gap: 40px;
-
+            padding: 0;
         }
     }
 
@@ -106,11 +122,24 @@
         align-items: center;
 
         @media @bw1020 {
-            flex-direction: column;
+            display: inline-flex;
+            align-items: center;
         }
 
-        @media @bw370 {
-            flex-direction: row;
+        @media @bw768 {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+
+        @media @bw500 {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        @media @bw320 {
+            display: inline-flex;
+            align-items: center;
         }
     }
 
@@ -143,7 +172,7 @@
             width: 100%;
         }
 
-        @media @bw370 {
+        @media @bw320 {
             text-align: left;
             width: 210px;
         }
@@ -154,7 +183,20 @@
         flex-direction: column;
         gap: 5px;
 
-        @media @bw370 {
+        @media @bw1020 {
+            align-items: start;
+        }
+
+        @media @bw768 {
+            align-items: center;
+        }
+
+        @media @bw500 {
+            align-items: start;
+        }
+
+        @media @bw320 {
+            align-items: start;
             gap: 1px;
         }
     }
@@ -169,12 +211,12 @@
 
         @media @bw1170 {
             font-size: 18px;
-            text-align: center;
+            text-align: start;
         }
 
-        @media @bw370 {
+        @media @bw320 {
             font-size: 14px;
-            text-align: left;
+            text-align: start;
         }
     }
 
@@ -189,7 +231,7 @@
             text-align: center;
         }
 
-        @media @bw370 {
+        @media @bw320 {
             font-size: 14px;
             text-align: left;
         }
